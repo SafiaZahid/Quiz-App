@@ -57,7 +57,7 @@ function checkIn (event){
         // console.log(getData);
         // console.log(window.location);
         setTimeout(() =>{
-       window.location.href = "./dashboard.html";
+       window.open("./dashboard.html", "_blank"); // we can add width and height of the window
         }, 2000)
         }
         
@@ -92,11 +92,11 @@ function logIn(event){
   else{
     Swal.fire({
       icon: "success",
-      title: `Welcome back ${name}!`,
+      title: `Welcome back ${logInData.name}!`,
       showConfirmButton: false,
       timer: 1500
     });
     setTimeout(() =>{
-      window.location.href = "./dashboard.html";
+      window.open("./dashboard.html" , "_blank");
        }, 2000)
   }}
